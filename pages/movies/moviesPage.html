@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css"> 
+    <link rel="stylesheet" href="./moviePage.css">
+    <script src="https://kit.fontawesome.com/80e57cfd3a.js" crossorigin="anonymous"></script>
+    <title>IMDB Clone</title>
+</head>
+<body>
+    <body>
+        <div id="header">
+            <img src="../../images/logo.png" height="45px" width="70px" style="border-radius: 10px; margin: 20px 150px;">
+            <button id="favorite" onclick="back()">Back</button>
+        </div>
+    
+        <div id="main-section">
+          
+            <div id="selectedMovie">
+                <div id="titleHeader" >
+                    <div id="titleNdYear" >
+                        <h1 id="selectedMovieTitle"></h1>
+                        <p id="selectedMovieYr"></p>
+                    </div>
+                    <p id="rating"></p>
+                </div>
+                <div id="card">
+                    <img id="selectedMoviePoster">
+                    <div id="movieDetails">
+                        <p style="font-size: 20px; font-weight: bold;">Plot</p>
+                        <p id="plotDetails"></p>
+                        <p><span id="directors">Directors:</span><span id="directorDetails"></span></span></p>
+                        <p><span id="cast">Actors:</span><span id="castDetails"></span></span></p>
+                        <p><span id="genre">Genre:</span><span id="genreDetails"></span></span></p>
+               
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <div id="loader" class="loader"></div>
+    
+        <script src="moviePage.js"></script>
+    </body>
+</body>
+</html>

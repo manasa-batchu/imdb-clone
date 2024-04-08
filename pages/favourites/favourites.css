@@ -1,0 +1,35 @@
+/* favoriteList */
+#favorite-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.favContainer{
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    width: 90%;
+}
+
+#imageContainer img{
+    height: 200px;
+    width: 150px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#favDetails{
+    padding-left: 10px;
+    flex: 1;
+
+}
+
+#deleteFav:hover .fa-trash {
+    transform: scale(1.2); 
+}
+
+
+

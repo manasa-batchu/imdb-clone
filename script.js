@@ -21,7 +21,7 @@ function inputChange(event) {
         console.log('Search value is empty');
         return;
     }
-    fetch(`http://www.omdbapi.com/?s=${searchValue}&apikey=87ba5778`).then((res) => {
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=87ba5778`).then((res) => {
         return res.json();
     }).then((data) => {
         if (data.Response === 'False') {

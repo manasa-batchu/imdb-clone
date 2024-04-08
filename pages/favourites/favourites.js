@@ -6,7 +6,7 @@ function favList() {
     console.log(storedFavoriteMovies)
     favoriteList.innerHTML = ''
     storedFavoriteMovies.forEach(id => {
-        fetch(`http://www.omdbapi.com/?i=${id}&apikey=87ba5778`).then((res) => res.json())
+        fetch(`https://www.omdbapi.com/?i=${id}&apikey=87ba5778`).then((res) => res.json())
             .then((movie) => {
                 const favContainer = document.createElement('div');
                 favContainer.className = 'favContainer';

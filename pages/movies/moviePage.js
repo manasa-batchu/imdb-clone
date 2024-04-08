@@ -21,7 +21,7 @@ function fetchId() {
     const url = window.location.href;
     id = url.split('?')[1].split('=')[1]
     console.log(id)
-    fetch(`http://www.omdbapi.com/?i=${id}&apikey=87ba5778`).then((res) => {
+    fetch(`https://www.omdbapi.com/?i=${id}&apikey=87ba5778`).then((res) => {
         return res.json();
     }).then((data) => {
         console.log(data)
